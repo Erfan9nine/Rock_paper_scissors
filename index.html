@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/css/src.css" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <title>Document</title>
+  </head>
+  <body class="bg-green-500 grid grid-cols-2">
+    <div id="person" class="w-full h-screen bg-amber-400">
+      <p class="flex justify-center mt-4 text-xl">
+        player point: <span id="player-guss">00</span>
+      </p>
+      <div
+        id="picker"
+        class=" select-none w-full h-screen flex justify-center items-center gap-4 md:gap-20"
+      >
+        <button
+          id="rock"
+          number="1"
+          data-selection="0"
+          onclick="caller(event)"
+          class=" hover:scale-110 transition-all duration-300 text-center text-5xl bg-white/40 rounded-full cursor-pointer p-2"
+          >✊</button
+        >
+        <button 
+          id="paper"
+          onclick="caller(event)"
+          number="2"
+          data-selection="1"
+          class=" hover:scale-110 transition-all duration-300 text-center text-5xl bg-white/40 rounded-full cursor-pointer p-2"
+          >✋</button
+        >
+        <button 
+          id="scessior"
+          onclick="caller(event)"
+          data-selection="2"
+          class=" hover:scale-110 transition-all duration-300 text-center text-5xl bg-white/40 rounded-full cursor-pointer p-2"
+          >✌️</button
+        >
+      </div>
+    </div>
+    <div id="computer-move" class="w-full h-screen bg-blue-400">
+      <p class="flex justify-center mt-4 text-xl">
+        computer point: <span id="computer-guss">00</span>
+      </p>
+      <div class="w-full h-screen flex items-center justify-center">
+        <span
+          id="questionMark"
+          class="text-7xl font-bold bg-white/40 px-6 py-1 rounded-full"
+          >?</span
+        >
+      </div>
+    </div>
+    <script src="./src/js/index.js"></script>
+  </body>
+</html>
